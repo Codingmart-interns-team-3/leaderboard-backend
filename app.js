@@ -40,6 +40,8 @@ mongoose
 
 //Listening on port 4000
 
-app.listen(4000,()=>{
-  console.log('Server Listening to port 4000');
+let port = process.env.PORT || 4000;
+
+app.listen( port,()=>{
+  console.log('Server Listening to port '+port);
 });
