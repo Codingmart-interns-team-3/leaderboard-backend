@@ -9,6 +9,14 @@ const scoreSchema = mongoose.Schema({
     type: Number,
     required: true,
   },
+  department: {
+    type: String,
+    required: true,
+  },
+  game: {
+    type: String,
+    required: true,
+  },
   date: {
     type: Date,
     default: Date.now,
